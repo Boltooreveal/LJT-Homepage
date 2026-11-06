@@ -7,58 +7,55 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
 
-Work experience
+* **Ph.D. in Computer Science**, Hong Kong University of Science and Technology, 2024–present
+* **B.Eng.**, Shanghai Jiao Tong University, 2020–2024; graduated in June 2024
+
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Research Intern**, MINIMAX, February 2025–present
+* **Research Intern**, Tencent WXG, June 2024–September 2024
+  * Advisor: Zifei Shan
+* **Research Intern**, Shanghai AI Lab, June 2023–December 2023
+  * Advisor: Prof. Yu Cheng
+* **PhD candidate**, HKUST NLP Group, Hong Kong University of Science and Technology, 2024–present
+  * Supervisor: Professor Junxian He
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
+* Natural language processing
+* Machine learning
+* LLM reasoning and reinforcement learning
+* Hallucination in vision-language models
+* LLM truthfulness and interpretability
+
+Honors and Awards
+======
+
+* Zhiyuan Honor Scholarship, Shanghai Jiao Tong University
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+
+{% for category in site.publication_category %}
+<h2>{{ category[1].title }}</h2>
+<ul>
+  {% for post in site.publications reversed %}
+    {% if post.category == category[0] %}
+      {% include archive-single-cv.html %}
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endfor %}
+
+Contact Information
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+* **Email:** [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
+* **GitHub:** [Vicent0205](https://github.com/Vicent0205)
+* **Google Scholar:** [Junteng Liu's profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
+* **X:** [@junteng88716710](https://twitter.com/junteng88716710)
