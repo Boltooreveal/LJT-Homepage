@@ -1,17 +1,17 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Junteng Liu"
+title                    : "Junteng Liu's Homepage"
 title_separator          : "-"
 name                     : "Junteng Liu"
 description              : "Junteng Liu's academic homepage"
-url                      : https://boltooreveal.github.io
+url                      : https://boltooreveal.github.io/LJT-Homepage
 baseurl                  : "/LJT-Homepage"
 repository               : "Boltooreveal/LJT-Homepage"
 
 # Site Author
 author:
-  avatar           : ""
+  avatar           : false
   name             : "Junteng Liu"
   bio              : "First-year PhD candidate at HKUST NLP Group. Research focuses on natural language processing and machine learning."
   employer         : "Hong Kong University of Science and Technology"
